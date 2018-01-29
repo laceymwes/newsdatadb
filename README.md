@@ -79,7 +79,7 @@ GROUP BY slug_path ORDER BY path_count;
 ```
 `SELECT * FROM get_slug_log_path;`
 
-![](psql screenshots/get_slug_log_path.png)
+![](psql_screenshots/get_slug_log_path.png)
 
 `article_popularity` (Answer)
 
@@ -94,7 +94,7 @@ LIMIT 3;
 ```
 `SELECT * FROM article_popularity;`
 
-![](psql screenshots/article_popularity.png)
+![](psql_screenshots/article_popularity.png)
 
 ---
 
@@ -112,7 +112,7 @@ ORDER BY authors.name;
 
 `SELECT * FROM author_to_slug;`
 
-![](psql screenshots/author_to_slug.png)
+![](psql_screenshots/author_to_slug.png)
 
 `author_popularity` (Answer)
 
@@ -127,7 +127,7 @@ ORDER BY views DESC;
 
 `SELECT * FROM author_popularity;`
 
-![](psql screenshots/author_popularity.png)
+![](psql_screenshots/author_popularity.png)
 
 ---
 
@@ -147,7 +147,7 @@ ORDER BY date;
 
 `SELECT * FROM date_total_status;`
 
-![](psql screenshots/date_total_status.png)
+![](psql_screenshots/date_total_status.png)
 
 
 `date_total_404_count`: Casts timestamp field to date type and aggregates all 404 statuses from log table, grouping by date.
@@ -161,7 +161,7 @@ ORDER BY date;
 ```
 `SELECT * FROM date_total_404_count;`
 
-![](psql screenshots/date_total_404_count.png)
+![](psql_screenshots/date_total_404_count.png)
 
 `date_404_and_total`: Joins date_total_status and date_total_404_count tables.
 
@@ -176,7 +176,7 @@ ORDER BY date_total_404_count.date;
 ```
 `SELECT * FROM date_404_and_total;`
 
-![](psql screenshots/date_404_and_total.png)
+![](psql_screenshots/date_404_and_total.png)
 
 `percentage_404_date` (Answer)
 
@@ -191,7 +191,7 @@ ORDER BY date;
 
 `SELECT * FROM percentage_404_date;`
 
-![](psql screenshots/percentage_404_date.png)
+![](psql_screenshots/percentage_404_date.png)
 
 
 ### Execution
