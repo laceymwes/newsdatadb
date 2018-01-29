@@ -1,4 +1,4 @@
-#Newsdatadb.py
+# Newsdatadb.py
 ---
 
 Newsdatadb.py is a simple program that queries a fictional media company's database which stores all it's author info, articles, and website HTTP requests. The purpose of this project is to aggregate site usage metrics and answer three basic questions:
