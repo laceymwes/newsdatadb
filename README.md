@@ -94,7 +94,7 @@ LIMIT 3;
 ```
 `SELECT * FROM article_popularity;`
 
-![](psql screenshots/article_popularity.png)
+![](psql%screenshots/article_popularity.png)
 
 ---
 
