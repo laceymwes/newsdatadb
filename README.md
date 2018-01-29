@@ -94,7 +94,11 @@ LIMIT 3;
 ```
 `SELECT * FROM article_popularity;`
 
+<<<<<<< HEAD
 ![](psql_screenshots/article_popularity.png)
+=======
+![](psql%screenshots/article_popularity.png)
+>>>>>>> 61247f46a7afa8506e1dc4e7d069edd633ce2d6f
 
 ---
 
