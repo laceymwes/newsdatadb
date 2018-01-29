@@ -1,4 +1,4 @@
-#Newsdatadb.py
+# Newsdatadb.py
 ---
 
 Newsdatadb.py is a simple program that queries a fictional media company's database which stores all it's author info, articles, and website HTTP requests. The purpose of this project is to aggregate site usage metrics and answer three basic questions:
@@ -10,7 +10,7 @@ Newsdatadb.py is a simple program that queries a fictional media company's datab
 "On which days did more than 1% of requests lead to errors?"
 
 
-###Dependencies / Setup
+### Dependencies / Setup
 
 + psycopg2 (PostgreSQL Adapter for Python)
 + Vagrant/Virtual Box
@@ -66,7 +66,7 @@ After executing the PSQL statements contained in "newsdata.sql", the following t
 Below are the project questions and hierarchical lists of views used to retrieve the data necessary to answer them.
 
 
-####"What are the most popular three articles of all time?"
+#### "What are the most popular three articles of all time?"
 
 
 `get_slug_log_path`: matches articles.slug with formatted log.path to determine amount of views per article
@@ -98,7 +98,7 @@ LIMIT 3;
 
 ---
 
-####"Who are the most popular article authors of all time?"
+#### "Who are the most popular article authors of all time?"
 
 
 `author_to_slug`: joins articles and and authors, matching author IDs to their respective articles in the articles table.
@@ -132,7 +132,7 @@ ORDER BY views DESC;
 ---
 
 
-####"On which days did more than 1% of requests lead to errors? (404)"
+#### "On which days did more than 1% of requests lead to errors? (404)"
 
 
 `date_total_status`:  Casts timestamp field to date type and counts ALL HTTP statuses.
@@ -194,7 +194,7 @@ ORDER BY date;
 ![](psql screenshots/percentage_404_date.png)
 
 
-###Execution
+### Execution
 
 ---
 
