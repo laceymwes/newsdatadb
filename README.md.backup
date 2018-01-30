@@ -94,7 +94,11 @@ LIMIT 3;
 ```
 `SELECT * FROM article_popularity;`
 
+<<<<<<< HEAD
 ![](psql_screenshots/article_popularity.png)
+=======
+![](psql%screenshots/article_popularity.png)
+>>>>>>> 61247f46a7afa8506e1dc4e7d069edd633ce2d6f
 
 ---
 
@@ -147,7 +151,7 @@ ORDER BY date;
 
 `SELECT * FROM date_total_status;`
 
-![](psql screenshots/date_total_status.png)
+![](psql_screenshots/date_total_status.png)
 
 
 `date_total_404_count`: Casts timestamp field to date type and aggregates all 404 statuses from log table, grouping by date.
@@ -161,7 +165,7 @@ ORDER BY date;
 ```
 `SELECT * FROM date_total_404_count;`
 
-![](psql screenshots/date_total_404_count.png)
+![](psql_screenshots/date_total_404_count.png)
 
 `date_404_and_total`: Joins date_total_status and date_total_404_count tables.
 
@@ -176,7 +180,7 @@ ORDER BY date_total_404_count.date;
 ```
 `SELECT * FROM date_404_and_total;`
 
-![](psql screenshots/date_404_and_total.png)
+![](psql_screenshots/date_404_and_total.png)
 
 `percentage_404_date` (Answer)
 
@@ -191,7 +195,7 @@ ORDER BY date;
 
 `SELECT * FROM percentage_404_date;`
 
-![](psql screenshots/percentage_404_date.png)
+![](psql_screenshots/percentage_404_date.png)
 
 
 ### Execution

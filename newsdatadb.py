@@ -15,7 +15,9 @@ def get_query_results(query):
     ''' fetchall returns queries that have been ran thus far with the current DB
     connection and cursor object
     '''
-    return db_c.fetchall()
+    results = db_c.fetchall()
+    db.close()
+    return results
 
 
 # Question 3
